@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    outline: none;
+}
+
+html{
+    min-height: 100%;
+    background: url("./imagens/background.jpg") center;
+    background-size: cover;
+}
+main{
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 8%;
+    background: #d1d1d1;
+   
+}
+.input-text{
+    padding: 8px;
+    padding-left: 15px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    
+}
+main button{
+    height: 40px;
+    padding: 0 12px;
+    color: white;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    background-color: #427D9D;
+    float: right;
+}
+main button:hover{
+    cursor: pointer;
+    background-color: #134969;
+}
+main button:active{
+    opacity: 0.6;
+}
+
+.list-tasks{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+.task{
+    display: flex;
+    height: 45px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+   
+}
+.task img{
+    height: 25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.task:hover img{
+    opacity: 1;
+}
+
+.done{
+    text-decoration: line-through;
+    background-color: rgb(70, 164, 84);
+}
